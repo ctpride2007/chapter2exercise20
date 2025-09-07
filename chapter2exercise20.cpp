@@ -10,11 +10,17 @@ using namespace std;
 
 int main()
 {
-	int sqftPerGallon = 340, gallonsOfPaint, fenceHeight = 7, fenceLength = 100, paintNeeded, fenceSqft, twoCoatsSqft;
+	double sqftPerGallon = 340, gallonsOfPaint, fenceHeight , fenceLength , paintNeeded, fenceSqft, twoCoatsSqft;
+
+	cout << "Enter the height of the fence in feet ";
+	cin >> fenceHeight;
+
+	cout << "Enter the length of the fence in feet ";
+	cin >> fenceLength;
 
 	fenceSqft = fenceHeight * fenceLength;
 	twoCoatsSqft = fenceSqft * 2;
 	paintNeeded = twoCoatsSqft / sqftPerGallon;
 
-	cout << "Approximately " << paintNeeded << " gallons of paint will be needed to paint two coats on a fence that is 6x100ft. " << endl;
+	cout << "Approximately " << paintNeeded << " gallons of paint will be needed to paint two coats on a fence that is " << fenceHeight << " feet high and " << fenceLength << " feet long " << endl;
 }
