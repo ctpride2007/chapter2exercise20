@@ -6,8 +6,15 @@
 */
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int sqftPerGallon = 340, gallonsOfPaint, fenceHeight = 7, fenceLength = 100, paintNeeded, fenceSqft, twoCoatsSqft;
+
+	fenceSqft = fenceHeight * fenceLength;
+	twoCoatsSqft = fenceSqft * 2;
+	paintNeeded = twoCoatsSqft / sqftPerGallon;
+
+	cout << "Approximately " << paintNeeded << " gallons of paint will be needed to paint two coats on a fence that is 6x100ft. " << endl;
 }
